@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-links">
+            <div class="logos">
+                <a href="https://www.joinville.sc.gov.br/" &gt;&gt> <img src="imagens/Logo1.png" alt="" class="logo1"></a>
+                <a href="../telainicial/index.html" &gt;&gt> <img src="imagens/Logo2.png" alt="" class="logo2"></a>
+            </div>
+            <div id="main">
+                <div class="openbtn" onclick="openNav()">☰</div>  
+            </div>
+            <div id="mySidebar" class="navbar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="../telainicial/index.html">Home</a>
+                <a href="../categorias/indexsobrenos.html">Sobre Nós</a>
+                <a href="../categorias/">Atividades</a>
+                <a href="../categorias/indexcontato.html">Contato</a>
+                <a href="../login/eptran.html">Entrar</a>
+              </div>
+            </div>
+    </header>
+    <div class="container">
+        <div class="quadrados">
+            <div class="quadrado1">
+                <div>
+                    <img src="imagens/Logotipo_Prefeitura.png" alt="" class="prefeitura" id="prefeitura-image">
+                <div>
+                    <p>
+                    <h1 class="titulo2">LOGIN</h1>
+                    </p>
+                    <form action="processamento_login.php" method="post">
+        
+                        <label for="usuario">Usuário:</label>
+                        <input type="text" name="usuario" placeholder="Digite o nome do usuario"><br>
+                         
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha"   placeholder="Digite a senha do cliente"><br>
+                        
+                        <input type="submit" name="acao" value="Enviar">
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
